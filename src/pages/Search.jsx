@@ -11,12 +11,12 @@ const Container = styled(motion.div)`
   min-height: 100vh;
   position: relative; /* 부모 컨테이너에 relative 위치 추가 */
   min-height: 100vh;
-`
+`;
 
 const SearchBox = styled.img`
   width: 90vw;
   height: auto;
-`
+`;
 
 const TypedText = styled.div`
   position: absolute; /* 텍스트를 이미지 위에 배치 */
