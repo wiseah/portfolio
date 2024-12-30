@@ -3,13 +3,20 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Container = styled.div`
-  width: 100vw;
+  width: 100%;
   height: 100px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   gap: 4vw;
+
+  @media (max-width: 768px) {
+    gap: 2vw;
+  }
+  @media (max-width: 480px) {
+    gap: 1vw;
+  }
 `;
 
 const HomeButton = styled.button`
@@ -23,6 +30,15 @@ const HomeButton = styled.button`
   &:hover {
     opacity: 0.8;
   }
+
+  @media (max-width: 768px) {
+    font-size: 32px;  
+    margin-left: 16px;
+  }
+  @media (max-width: 480px) {
+    font-size: 26px; 
+    margin-left: 10px;
+  }
 `;
 
 const EpContainer = styled.div`
@@ -32,6 +48,13 @@ const EpContainer = styled.div`
   align-items: center;
   gap: 2vw;
   margin-right: 40px;
+
+  @media (max-width: 768px) {
+    margin-right: 16px;
+  }
+  @media (max-width: 480px) {
+    margin-right: 10px;
+  }
 `;
 
 const EpButton = styled.button`
@@ -44,6 +67,13 @@ const EpButton = styled.button`
   border-bottom: ${({ isActive }) => (isActive ? '3px solid #00D564' : 'none')};
   &:hover {
     opacity: 0.8;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 24px;   
+  }
+  @media (max-width: 480px) {
+    font-size: 18px;   
   }
 `;
 
