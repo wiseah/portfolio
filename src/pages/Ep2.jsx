@@ -24,9 +24,17 @@ const Contents = styled.div`
   margin-top: 30px;
 `
 const Text = styled.div`
-    font-size: 40px;
-    font-weight: bold;
-    text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+
+  @media (max-width: 768px) {
+    font-size: 28px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 16px;
+  }  
 `
 const Highlight = styled.span`
   color: #00D564;
