@@ -45,6 +45,10 @@ const ShareButton = styled.button`
 function App() {
   const navigate = useNavigate();
 
+  const handleInterestClick = () => {
+    alert('첫 화 보기를 눌러주세요!');
+  };
+  
   const handleClick = () => {
     navigate('/ep1')
   };
@@ -76,7 +80,7 @@ function App() {
           }}
       />
       <ButtonContainer>
-        <ShareButton color="#00D564" textcolor="#fff"> + 관심 20,250,113</ShareButton>
+        <ShareButton color="#00D564" textcolor="#fff" onClick={handleInterestClick}> + 관심 2025,0113</ShareButton>
         <ShareButton color="#A5A5A5" textcolor="#000" onClick={handleClick}>첫 화 보기</ShareButton>
       </ButtonContainer>
     </Container>
