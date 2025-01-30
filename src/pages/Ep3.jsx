@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import HeaderContainer from '../layouts/HeaderContainer'
 import CookieAnimation from '../components/CookieAnimation'
+import { motion } from 'framer-motion'
 
 const Title = styled.div`
   background-color: #393B45;
@@ -16,7 +17,7 @@ const Title = styled.div`
   justify-content: center;
 `
 
-const Contents = styled.div`
+const Contents = styled(motion.div)`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,7 +47,12 @@ function Ep3() {
     <>
       <HeaderContainer />
       <Title>Ep3. 내가 그리는 미래</Title>
-      <Contents>
+      <Contents
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 1 }}
+      >
         <CookieAnimation />
         <Text>
           유료회차는 곧 감상하실 수 있습니다.<br />

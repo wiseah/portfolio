@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import HeaderContainer from '../layouts/HeaderContainer'
 import data from '../data/ActivityData.json'
+import { motion } from 'framer-motion';
 
 const Title = styled.div`
   background-color: #393B45;
@@ -16,7 +17,7 @@ const Title = styled.div`
   justify-content: center;
 `;
 
-const Contents = styled.div`
+const Contents = styled(motion.div)`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -157,7 +158,12 @@ function Ep2() {
     <>
       <HeaderContainer />
       <Title>Ep2. 나는 개발을 위해 이것까지 해봤다.</Title>
-      <Contents>
+      <Contents
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 1 }}
+      >
       <TimelineWrapper>
         <Title2>🔎 히스토리</Title2>
         <Subtitle>
