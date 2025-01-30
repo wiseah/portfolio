@@ -22,7 +22,7 @@ const Container = styled.div`
 const HomeButton = styled.button`
   font-size: 40px;
   font-weight: bold;
-  color: #00D564;
+  color: #FF007F;
   margin-left: 40px;
   background-color: #F8F8F8;
   border: none;
@@ -60,11 +60,11 @@ const EpContainer = styled.div`
 const EpButton = styled.button`
   font-size: 30px;
   font-weight: bold;
-  color: ${({ isActive }) => (isActive ? '#00D564' : '#000')};
+  color: ${({ isActive }) => (isActive ? '#FF007F' : '#000')};
   background-color: #F8F8F8;
   border: none;
   cursor: pointer;
-  border-bottom: ${({ isActive }) => (isActive ? '3px solid #00D564' : 'none')};
+  border-bottom: ${({ isActive }) => (isActive ? '3px solid #FF007F' : 'none')};
   &:hover {
     opacity: 0.8;
   }

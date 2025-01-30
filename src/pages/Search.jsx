@@ -20,7 +20,7 @@ const SearchBox = styled.img`
 
 const TypedText = styled.div`
   position: absolute; /* 텍스트를 이미지 위에 배치 */
-  color: #00D564;
+  color: #FF007F;
   font-weight: bold;
   font-size: 36px;
   text-align: center;

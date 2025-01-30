@@ -72,7 +72,7 @@ const InfoContent = styled.div`
   font-size: 1rem;
 `
 const Highlight = styled.span`
-  color: #00D564;
+  color: #FF007F;
   font-weight: bolder;
 `;
 
